@@ -46,32 +46,41 @@ This project demonstrates the setup and integration of a backend (using Payload 
    npm start
    The frontend client will be running on http://localhost:3000.
 
-### Key Backend Features
-Payload CMS Integration:
+### **Key Backend Features**
 
-Posts: Includes fields like title, body, cover image, and publish date.
-Authors: Includes fields like name, bio, and profile picture.
-Media Upload: Integrated to manage images and media files.
-Public API:
+- **Payload CMS Integration**:
+  - **Posts**: Includes fields like **title**, **body**, **cover image**, and **publish date**.
+  - **Authors**: Includes fields like **name**, **bio**, and **profile picture**.
+  - **Media Upload**: Integrated to manage **images** and **media files**.
 
-Fetch all posts and their associated authors.
-REST API with secure access.
-Admin Panel:
+- **Public API**:
+  - **Fetch all posts** and their associated authors.
+  - **REST API** with **secure access**.
 
-Manage posts and authors through the CMS interface.
-Admin users can add, edit, and delete posts and authors.
-Key Frontend Features
-Post List: Displays a list of blog posts with title, cover image, and author name.
-Post Detail: Displays the full content of a post along with the author’s information.
-Responsive Design: The frontend is styled using Tailwind CSS for a clean and responsive UI.
-Key Decisions Made During Development
-Choice of Payload CMS: Payload CMS was chosen because of its flexibility in managing content and media, making it ideal for managing blog posts and authors. It also allows for easy integration with custom backends and frontends.
+- **Admin Panel**:
+  - Manage **posts** and **authors** through the **CMS interface**.
+  - **Admin users** can **add**, **edit**, and **delete** posts and authors.
 
-Use of MongoDB: MongoDB was selected as the database due to its document-based structure, which works well with the content management needs of the project.
+---
 
-Frontend Framework: React was chosen for the frontend due to its component-based structure, which made it easier to organize and maintain the UI components like the post list and post detail pages.
+### **Key Frontend Features**
 
-API Integration: We used RESTful APIs to fetch data from the backend, ensuring that the frontend is decoupled from the backend and can be easily modified or extended.
+- **Post List**: Displays a list of **blog posts** with **title**, **cover image**, and **author name**.
+- **Post Detail**: Displays the **full content** of a post along with the **author’s information**.
+- **Responsive Design**: The frontend is styled using **Tailwind CSS** for a clean and responsive **UI**.
+
+---
+
+### **Key Decisions Made During Development**
+
+1. **Choice of Payload CMS**: **Payload CMS** was chosen because of its **flexibility** in managing content and media, making it ideal for managing **blog posts** and **authors**. It also allows for easy integration with custom **backends** and **frontends**.
+
+2. **Use of MongoDB**: **MongoDB** was selected as the **database** due to its **document-based structure**, which works well with the content management needs of the project.
+
+3. **Frontend Framework**: **React** was chosen for the frontend due to its **component-based structure**, which made it easier to organize and maintain the **UI components** like the **post list** and **post detail** pages.
+
+4. **API Integration**: We used **RESTful APIs** to fetch data from the **backend**, ensuring that the frontend is **decoupled** from the backend and can be easily modified or extended.
+
 
 ### Challenges and How They Were Overcome
 Media Uploads Display Issues: Initially, the media uploads were not displaying correctly on the frontend. After debugging, I realized that the API URL configurations were incorrect. I fixed this by ensuring consistent base URLs for the backend and properly configuring the media endpoint in Payload CMS.
