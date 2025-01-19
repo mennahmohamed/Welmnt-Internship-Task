@@ -82,12 +82,5 @@ This project demonstrates the setup and integration of a backend (using Payload 
 4. **API Integration**: We used **RESTful APIs** to fetch data from the **backend**, ensuring that the frontend is **decoupled** from the backend and can be easily modified or extended.
 
 
-### Challenges and How They Were Overcome
-Media Uploads Display Issues: Initially, the media uploads were not displaying correctly on the frontend. After debugging, I realized that the API URL configurations were incorrect. I fixed this by ensuring consistent base URLs for the backend and properly configuring the media endpoint in Payload CMS.
-
-Synchronizing Backend and Frontend: Ensuring the frontend correctly consumed the backend APIs was challenging. I solved this by thoroughly testing the API endpoints using Postman before integrating them into the frontend. Error handling was also added to manage any issues during the API call process.
-
-Dynamic Titles in CMS: Initially, Payload CMS displayed entries with a default title of "Untitled." I resolved this by configuring the CMS to use the ‘alt’ field as the default title, which allowed for more meaningful titles in the admin panel.
-
-Conclusion
+### **Conclusion**
 This project provides a comprehensive solution for managing a blog with a backend (Payload CMS) and frontend (React) integration. It demonstrates the full stack setup, including database configuration, API integration, and the admin panel for managing content. Despite some challenges, the project was completed successfully, with a clean, responsive frontend and efficient backend management.
