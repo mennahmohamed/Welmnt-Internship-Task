@@ -1,9 +1,13 @@
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig } from 'payload';
 
 export const Media: CollectionConfig = {
   slug: 'media',
   access: {
     read: () => true,
+  },
+  upload: true,
+  admin: {
+    useAsTitle: 'alt',
   },
   fields: [
     {
@@ -12,5 +16,4 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
-}
+};

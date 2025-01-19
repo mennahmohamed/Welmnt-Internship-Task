@@ -32,15 +32,9 @@ export default buildConfig({
   sharp,
   cors: [
     'http://localhost:3000', // React frontend URL
-    'http://localhost:5173', // Alternative Vite frontend URL
-  ],
-  csrf: [
-    'http://localhost:3000', // React frontend URL
-    'http://localhost:5173', // Alternative Vite frontend URL
   ],
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-  // Set the backend server port
   serverURL: 'http://localhost:4000',
 })
