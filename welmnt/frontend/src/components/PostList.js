@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// PostList Component
 export const PostList = ({ posts }) => {
   if (!posts?.length) return (
     <div className="flex items-center justify-center h-96">

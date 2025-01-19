@@ -5,7 +5,7 @@ const API_URL = 'http://localhost:4000/api/posts'; // Backend URL
 export const fetchPosts = async () => {
   try {
     const response = await axios.get(API_URL);
-    return response.data.docs; // Adjust according to the structure of your API response
+    return response.data.docs;
   } catch (error) {
     console.error('Error fetching posts:', error);
     return [];
