@@ -1,4 +1,3 @@
-// storage-adapter-import-placeholder
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
@@ -31,8 +30,17 @@ export default buildConfig({
     url: process.env.DATABASE_URI || '',
   }),
   sharp,
-  plugins: [
-    // payloadCloudPlugin(),
-    // storage-adapter-placeholder
+  cors: [
+    'http://localhost:3000', // React frontend URL
+    'http://localhost:5173', // Alternative Vite frontend URL
   ],
+  csrf: [
+    'http://localhost:3000', // React frontend URL
+    'http://localhost:5173', // Alternative Vite frontend URL
+  ],
+  graphQL: {
+    schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
+  },
+  // Set the backend server port
+  serverURL: 'http://localhost:4000',
 })
