@@ -20,3 +20,11 @@ This project demonstrates the setup and integration of a backend (using Payload 
    ```bash
    git clone https://github.com/your-repository.git
    cd backend
+2. Install dependencies:
+   ```bash
+   npm install
+3. Set up environment variables. Create a .env file in the root of the backend directory with the following:
+   ```bash
+   DATABASE_URI=your-mongodb-uri
+   PAYLOAD_SECRET=your-secret-key
+4. Run the backend server:
