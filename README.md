@@ -18,7 +18,7 @@ This project demonstrates the setup and integration of a backend (using Payload 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mennahmohamed/Welmnt-Internship-Task.git
-   cd backend
+   cd src
 2. Install dependencies:
    ```bash
    npm install
@@ -36,7 +36,7 @@ This project demonstrates the setup and integration of a backend (using Payload 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repository.git
+   git clone https://github.com/mennahmohamed/Welmnt-Internship-Task.git
    cd frontend
 2. Install dependencies:
    ```bash
